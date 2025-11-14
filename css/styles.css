@@ -134,6 +134,31 @@
     gap: 0.75rem;
   }
   
+/* HERO — CENTRADO */
+.hero.hero-full .hero-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* LOGO EN HERO */
+  .hero-logo img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(1); /* INVERTIR COLOR A BLANCO */
+    opacity: 0.9;
+  }
+
+  .hero h1 {
+    max-width: 720px;
+  }
+  .hero-sub {
+    max-width: 640px;
+  }
+  
+
   /* ================= BOTONES ================= */
   
   .btn {
