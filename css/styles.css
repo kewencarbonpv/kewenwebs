@@ -401,3 +401,14 @@
     }
   }
   
+
+  .footer a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .footer a:hover {
+    color: #25d366; /* guiño WhatsApp */
+  }
