@@ -359,6 +359,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .cta-final {
+    background: var(--bg);
+  }
   
  /* ================= FOOTER ================= */
 .footer {
@@ -535,4 +539,42 @@
 .faq-section .faq-item p {
   margin: 0;
   color: var(--muted);
+}
+
+
+.section-seo {
+  background: var(--bg); /* blanco limpio */
+}
+
+.section-seo h2,
+.section-seo .section-sub {
+  text-align: center;
+}
+
+.section-seo .nosotros-layout p {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.section-highlight {
+  background: #e8f5e9; /* Verde muy suave */
+  border-top: 1px solid #d9ebdb;
+  border-bottom: 1px solid #d9ebdb;
+}
+
+.btn-highlight {
+  background: #1b9b50; /* verde más profundo */
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 6px 16px rgba(14, 107, 53, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-highlight:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14, 107, 53, 0.28);
 }
