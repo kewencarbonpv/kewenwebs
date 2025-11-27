@@ -1,31 +1,34 @@
 // Kewen Carbón - script base
-// Aquí puedes agregar más adelante tracking, animaciones, etc.
+// Control de botón fijo de WhatsApp + año automático
 
-document.addEventListener('DOMContentLoaded', () => {
-    const hero = document.querySelector('.hero');
-    const waButton = document.querySelector('.btn-whatsapp-fixed');
-  
-    if (!hero || !waButton) return;
-  
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* === BOTÓN WHATSAPP FLOTANTE === */
+  const hero = document.querySelector(".hero");
+  const waButton = document.querySelector(".btn-whatsapp-fixed");
+
+  if (hero && waButton) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Si el hero es visible → ocultamos botón flotante
+          // Hero visible → ocultar botón
           if (entry.isIntersecting) {
-            waButton.classList.remove('is-visible');
+            waButton.classList.remove("is-visible");
           } else {
-            // Cuando el hero ya no está a la vista → mostramos botón flotante
-            waButton.classList.add('is-visible');
+            // Hero NO visible → mostrar botón
+            waButton.classList.add("is-visible");
           }
         });
       },
-      {
-        threshold: 0.1, // con que se vea un 10% del hero ya se considera visible
-      }
+      { threshold: 0.1 }
     );
-  
-    observer.observe(hero);
-  });
-  
 
-console.log("Kewen Carbón listo.");
+    observer.observe(hero);
+  }
+
+  /* === AÑO AUTOMÁTICO === */
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  console.log("Kewen Carbón listo.");
+});

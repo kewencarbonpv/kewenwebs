@@ -26,7 +26,7 @@
     <link rel="preload" as="image" href="images/kewen-carbon-hero.webp" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=2" />
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
@@ -50,6 +50,9 @@
     />
     <meta name="twitter:image" content="https://kewencarbon.cl/images/og-kewencarbon.jpg" />
 
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
@@ -59,37 +62,106 @@
 
     <!-- JSON-LD LocalBusiness -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Kewen Carbón",
-      "image": "https://kewencarbon.cl/images/kewen-carbon-hero.jpg",
-      "@id": "https://kewencarbon.cl/",
-      "url": "https://kewencarbon.cl/",
-      "telephone": "+56 9 7792 2452",
-      "areaServed": [
-        { "@type": "City", "name": "Frutillar" },
-        { "@type": "City", "name": "Llanquihue" },
-        { "@type": "City", "name": "Puerto Varas" },
-        { "@type": "City", "name": "Puerto Montt" }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Frutillar",
-        "addressRegion": "Los Lagos",
-        "addressCountry": "CL"
-      },
-      "description": "Carbón premium sin chispas a domicilio entre Frutillar y Puerto Montt. Quebracho, quebracho blanco y espino en formatos de 2,5 kg y 20 kg. Entrega a domicilio, ideal para asados.",
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://kewencarbon.cl/#localbusiness",
+        "name": "Kewen Carbón",
+        "url": "https://kewencarbon.cl/",
+        "image": "https://kewencarbon.cl/images/kewen-carbon-hero.webp",
+        "telephone": "+56 9 7792 2452",
+        "description": "Emprendimiento familiar de carbón premium a domicilio entre Frutillar y Puerto Montt. Espino y quebracho blanco en sacos de 20 kg sin chispas, además de formatos de 2,5 kg de quebracho colorado para parrillas rápidas.",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Frutillar",
+          "addressRegion": "Los Lagos",
+          "addressCountry": "CL"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Frutillar" },
+          { "@type": "City", "name": "Llanquihue" },
+          { "@type": "City", "name": "Puerto Varas" },
+          { "@type": "City", "name": "Puerto Montt" }
         ],
-        "opens": "09:00",
-        "closes": "21:00"
-      }]
-    }
-    </script>
+        "sameAs": [
+          "https://www.instagram.com/kewencarbon/"
+        ],
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Carbón de espino 20 kg",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Saco de carbón de espino 20 kg"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Carbón quebracho blanco 20 kg",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Saco de carbón quebracho blanco 20 kg"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Carbón quebracho colorado 2,5 kg",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Bolsa de carbón quebracho colorado 2,5 kg"
+            },
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+      </script>
+
+      <!-- JSON-LD FAQPage -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿En qué zonas hacen entrega de carbón?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entregamos en Frutillar, Frutillar Alto, Llanquihue, Puerto Varas y sectores seleccionados de Puerto Montt. Siempre coordinamos la dirección exacta por WhatsApp antes del reparto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo hago un pedido?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Solo nos escribes por WhatsApp al +56 9 7792 2452, nos indicas tu ubicación y qué formato de carbón necesitas, y coordinamos día y horario de entrega."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Con cuánta anticipación debo pedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Idealmente con 1 día de anticipación. A veces tenemos disponibilidad el mismo día, pero depende de la ruta de entregas."
+        }
+      }
+    ]
+  }
+  </script>
+  
+      
   </head>
 
   <body>
@@ -147,7 +219,10 @@
             <article class="beneficio">
               <div class="emoji">🔥</div>
               <h3>Sin chispas, sin sorpresas</h3>
-              <p>Carbón seco, de quiebre parejo, <strong>sin chispas</strong> y con encendido estable.</p>
+              <p>
+                Sacos de <strong>espino y quebracho blanco</strong> secos, de quiebre parejo y sin chispas,
+                con encendido estable.
+              </p>
             </article>
             <article class="beneficio">
               <div class="emoji">⏱️</div>
@@ -189,7 +264,7 @@
               <p class="precio-desde">Desde $3.500*</p>
               <ul>
                 <li>Ideal para asados pequeños o parrillas en departamento.</li>
-                <li>Carbón sin chispas, fácil de almacenar.</li>
+                <li>Carbón fácil de almacenar, ideal para tener siempre a mano.</li>
               </ul>
             </div>
 
@@ -258,7 +333,7 @@
             <div class="zonas-texto">
               <p>
                 Kewen Carbón realiza <strong>delivery de carbón a domicilio</strong> en todas las zonas entre Frutillar y
-                Puerto Montt. Operamos como negocio local sin atención a público en el domicilio.
+                Puerto Montt. Operamos como negocio local con atención a domicilio.
               </p>
               <p>
                 Operamos desde nuestra bodega entre Frutillar y Puerto Varas, sin atención a público. Todas las entregas se coordinan directamente por WhatsApp según tu ubicación.
@@ -307,7 +382,7 @@
             <figure class="galeria-item">
               <img
                 src="images/backstage-kewen.webp"
-                alt="Emprendimiento local Kewen Carbón en el sur de Chile, saco de 2.5kg de quebracho colorado, carbón sin chispas"
+                alt="Emprendimiento local Kewen Carbón en el sur de Chile, saco de 2.5kg de quebracho colorado."
                 loading="lazy"
               />
               <figcaption>Emprendimiento familiar local dedicado al carbón premium.</figcaption>
@@ -334,47 +409,75 @@
         </div>
       </section>
 
-      <!-- CTA FINAL -->
-      <section class="section alt cta-final" id="contacto">
-        <div class="container center">
-          <h2>¿Listo para el asado?</h2>
-          <p class="section-sub">
-            Pide tu carbón premium sin chispas por WhatsApp y coordinamos la entrega a domicilio.
-          </p>
-          <a
-            class="btn btn-primary btn-large"
-            href="https://wa.me/56977922452?text=Hola,%20quiero%20pedir%20carbon."
-            target="_blank"
-            rel="noopener"
-          >
-            Pedir carbón por WhatsApp
-          </a>
+        <!-- CTA FINAL -->
+        <section class="section alt cta-final" id="contacto">
+          <div class="container center">
+            <h2>¿Listo para el asado?</h2>
+            <p class="section-sub">
+              Pide tu carbón premium sin chispas por WhatsApp y coordinamos la entrega a domicilio.
+            </p>
+            <a
+              class="btn btn-primary btn-large"
+              href="https://wa.me/56977922452?text=Hola,%20quiero%20pedir%20carbon."
+              target="_blank"
+              rel="noopener"
+            >
+              Pedir carbón por WhatsApp
+            </a>
+          </div>
+        </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container">
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-item">
+            <h3>¿En qué zonas hacen entrega de carbón?</h3>
+            <p>Entregamos en Frutillar, Frutillar Alto, Llanquihue, Puerto Varas y sectores seleccionados de Puerto Montt. Siempre coordinamos la dirección exacta por WhatsApp antes del reparto.</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Cómo hago un pedido?</h3>
+            <p>Solo nos escribes por WhatsApp al +56 9 7792 2452, nos indicas tu ubicación y qué formato de carbón necesitas, y coordinamos día y horario de entrega.</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Con cuánta anticipación debo pedir?</h3>
+            <p>Idealmente con 1 día de anticipación. A veces tenemos disponibilidad el mismo día, pero depende de la ruta de entregas.</p>
+          </div>
         </div>
       </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-content">
-        <div>
-          <p class="footer-brand">Kewen Carbón</p>
-          <p class="footer-small">
-            Carbón a domicilio en Frutillar, Llanquihue, Puerto Varas y Puerto Montt.
-          </p>
-          <p class="footer-small">
-            Síguenos en Instagram:
-            <a href="https://www.instagram.com/kewencarbon/" target="_blank" rel="noopener">
-              @kewencarbon
-            </a>
-          </p>
-        </div>
-        <div class="footer-meta">
-          <p class="footer-small">
-            Horario: 09:00–21:00 · Contacto WhatsApp: +56 9 7792 2452
-          </p>
-        </div>
+      <img src="images/logo-kewen.png" alt="Kewen Carbón" class="footer-logo">
+    
+      <p class="footer-desc">
+        Kewen Carbón es un emprendimiento familiar de carbón premium a domicilio entre Frutillar y Puerto Montt.
+        Espino, quebracho blanco y quebracho colorado para asados y parrillas en el sur de Chile.
+      </p>
+    
+      <p class="footer-address">
+        Entregas en Frutillar, Frutillar Alto, Llanquihue, Puerto Varas y sectores de Puerto Montt.<br>
+        WhatsApp: 
+        <a href="https://wa.me/56977922452" target="_blank" rel="noopener">
+          +56 9 7792 2452
+        </a>
+      </p>
+    
+      <div class="footer-social">
+        <a href="https://www.instagram.com/kewencarbon/" target="_blank" rel="noopener"
+           aria-label="Instagram Kewen Carbón">
+          <svg class="icon-ig" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="5"></circle>
+            <circle cx="17" cy="7" r="1.3"></circle>
+          </svg>
+        </a>
       </div>
+    
+      <p class="footer-copy">© <span id="year"></span> Kewen Carbón</p>
     </footer>
+    
 
     <!-- BOTÓN WHATSAPP FIJO -->
     <a
@@ -387,6 +490,6 @@
       <span>WhatsApp</span>
     </a>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=2"></script>
   </body>
 </html>
